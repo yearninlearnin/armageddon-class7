@@ -1,0 +1,22 @@
+Below is the Route53 add-on for Bonus-B (Hosted Zone + ACM DNS validation records + app.chewbacca-growl.com ALIAS → ALB).
+It’s written as a Terraform skeleton with Chewbacca comment style.
+
+Add this as bonus_b_route53.tf.
+
+Add to variables.tf (append)
+variable "manage_route53_in_terraform" {
+  description = "If true, create/manage Route53 hosted zone + records in Terraform."
+  type        = bool
+  default     = true
+}
+
+variable "route53_hosted_zone_id" {
+  description = "If manage_route53_in_terraform=false, provide existing Hosted Zone ID for domain."
+  type        = string
+  default     = ""
+}
+
+Add file: bonus_b_route53.tf
+
+
+
