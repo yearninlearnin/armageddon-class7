@@ -68,5 +68,10 @@ Script 4 — malgus_waf_summary.py
 Summarizes WAF logs (Allow vs Block) from CloudWatch Logs destination.
 WAF logging destinations: CloudWatch Logs, S3, Firehose.
 
+Script 5 — malgus_cloudfront_log_explainer.py (optional)
+If you ingest CloudFront standard logs into S3, this script reads a log file and counts Hit/Miss/RefreshHit.
+
+CloudFront standard logs reference Hit / RefreshHit semantics. 
+
 
 
